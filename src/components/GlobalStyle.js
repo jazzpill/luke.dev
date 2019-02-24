@@ -43,6 +43,9 @@ export const GlobalStyle = createGlobalStyle`
 		}
 	}
 
+
+p { line-height: 1.7 }
+
 	a:hover {
 		color: ${COLOR_HOVER};
 	}
