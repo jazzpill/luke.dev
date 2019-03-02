@@ -11,17 +11,17 @@ import LastFMIcon from '../images/lastfm.svg';
 const SOCIAL = [
 	{
 		icon: GitHubIcon,
-		label: 'GitHub',
+		label: 'github.com/lukemartin',
 		url: 'https://github.com/lukemartin',
 	},
 	{
 		icon: TwitterIcon,
-		label: 'Twitter',
+		label: 'twitter.com/luke_is',
 		url: 'https://twitter.com/luke_is',
 	},
 	{
 		icon: LastFMIcon,
-		label: 'last.fm',
+		label: 'last.fm/user/lukus',
 		url: 'https://www.last.fm/user/lukus',
 	},
 ];
