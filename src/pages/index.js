@@ -83,8 +83,7 @@ const IndexPage = () => {
 						flex: '1 1 auto',
 					}}
 				>
-					My name is Luke. I'm a Lead Engineer at{' '}
-					<a href="https://fath.om">Fathom</a>.
+					My name is Luke. I'm a Lead UI Developer.
 				</p>
 
 				<ul
