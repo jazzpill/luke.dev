@@ -12,9 +12,7 @@ const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 const fileLoaderRule = {
 	test: /\.(png|jpe?g|gif)$/i,
-	use: [
-		'file-loader',
-	]
+	use: ['file-loader'],
 };
 
 module.exports = {
@@ -31,12 +29,12 @@ module.exports = {
 						options: {
 							dev,
 							hydratable: true,
-							hotReload: false // pending https://github.com/sveltejs/svelte/issues/2377
-						}
-					}
+							hotReload: false, // pending https://github.com/sveltejs/svelte/issues/2377
+						},
+					},
 				},
-				fileLoaderRule
-			]
+				fileLoaderRule,
+			],
 		},
 		mode,
 		plugins: [
@@ -44,10 +42,10 @@ module.exports = {
 			// dev && new webpack.HotModuleReplacementPlugin(),
 			new webpack.DefinePlugin({
 				'process.browser': true,
-				'process.env.NODE_ENV': JSON.stringify(mode)
+				'process.env.NODE_ENV': JSON.stringify(mode),
 			}),
 		].filter(Boolean),
-		devtool: dev && 'inline-source-map'
+		devtool: dev && 'inline-source-map',
 	},
 
 	server: {
@@ -66,25 +64,23 @@ module.exports = {
 							css: false,
 							generate: 'ssr',
 							hydratable: true,
-							dev
-						}
-					}
+							dev,
+						},
+					},
 				},
-				fileLoaderRule
-			]
+				fileLoaderRule,
+			],
 		},
 		mode,
-		plugins: [
-			new WebpackModules()
-		],
+		plugins: [new WebpackModules()],
 		performance: {
-			hints: false // it doesn't matter if server.js is large
-		}
+			hints: false, // it doesn't matter if server.js is large
+		},
 	},
 
-	serviceworker: {
-		entry: config.serviceworker.entry(),
-		output: config.serviceworker.output(),
-		mode
-	}
+	// serviceworker: {
+	// 	entry: config.serviceworker.entry(),
+	// 	output: config.serviceworker.output(),
+	// 	mode
+	// }
 };
