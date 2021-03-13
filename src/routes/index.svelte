@@ -1,4 +1,6 @@
 <script>
+	import Meta from '../components/Meta.svelte';
+
 	const SOCIAL = [
 		{
 			icon: 'github.svg',
@@ -18,35 +20,32 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Hi 👋 | luke.dev</title>
-</svelte:head>
+<Meta
+	title="Hi there"
+	description="Personal web site of Luke Martin, a Lead UI Developer from London"
+/>
 
-<main>
-	<h1>Hi 👋</h1>
+<h1>Hi 👋</h1>
 
-	<p>My name is Luke. I'm a Lead UI Developer.</p>
+<p>My name is Luke. I'm a Lead UI Developer.</p>
 
-	<ul>
-		{#each SOCIAL as { icon, label, url }}
-			<li>
-				<img src={`images/${icon}`} alt="" />
-				<a href={url} target="_blank" rel="noopener noreferrer">
-					{label}
-				</a>
-			</li>
-		{/each}
-	</ul>
-</main>
+<ul>
+	{#each SOCIAL as { icon, label, url }}
+		<li>
+			<img
+				src={`images/${icon}`}
+				alt={`icon for ${label}`}
+				width="32"
+				height="32"
+			/>
+			<a href={url} target="_blank" rel="noopener noreferrer">
+				{label}
+			</a>
+		</li>
+	{/each}
+</ul>
 
 <style>
-	main {
-		padding: 40px;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-	}
-
 	h1 {
 		font-size: 36px;
 	}
@@ -69,10 +68,6 @@
 		justify-content: flex-start;
 		align-items: center;
 		margin-bottom: 10px;
-	}
-
-	li img {
-		fill: var(--text-color);
 	}
 
 	li a {
