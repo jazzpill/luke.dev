@@ -5,8 +5,13 @@
 <style>
 	main {
 		padding: 40px;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
+	}
+
+	@media (min-width: 960px) {
+		main {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
 	}
 </style>

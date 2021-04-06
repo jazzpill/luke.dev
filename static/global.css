@@ -20,10 +20,12 @@ body {
 	color: var(--text-color);
 }
 
-html,
-body,
-#sapper {
-	height: 100%;
+@media (min-width: 960px) {
+	html,
+	body,
+	#sapper {
+		height: 100%;
+	}
 }
 
 a,
@@ -57,4 +59,28 @@ a:hover {
 
 svg {
 	fill: var(--text-color);
+}
+
+@keyframes slideInY {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInX {
+	from {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
