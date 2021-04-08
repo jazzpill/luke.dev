@@ -14,7 +14,7 @@
 	<p>My name is Luke. I'm a Lead UI Developer.</p>
 </header>
 
-<main />
+<!-- <main/> -->
 
 <footer>
 	<SocialLinks />
@@ -59,9 +59,9 @@
 		line-height: 1.5;
 	}
 
-	main {
-		flex: 1 1 100%;
-	}
+	/* main {
+		flex: 1 1 auto;
+	} */
 
 	footer {
 		animation: slideInY 500ms $easing 400ms both;
