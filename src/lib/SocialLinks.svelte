@@ -7,8 +7,8 @@
 		},
 		{
 			icon: 'twitter.svg',
-			label: 'twitter.com/luke_is',
-			url: 'https://twitter.com/luke_is',
+			label: 'twitter.com/jazzpill_',
+			url: 'https://twitter.com/jazzpill_',
 		},
 		{
 			icon: 'lastfm.svg',
