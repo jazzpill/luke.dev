@@ -2,13 +2,13 @@
 	const SOCIAL_LINKS = [
 		{
 			icon: 'github.svg',
-			label: 'github.com/jazzpill',
-			url: 'https://github.com/jazzpill',
+			label: 'github.com/lukemartin',
+			url: 'https://github.com/lukemartin',
 		},
 		{
 			icon: 'twitter.svg',
-			label: 'twitter.com/jazzpill_',
-			url: 'https://twitter.com/jazzpill_',
+			label: 'twitter.com/luke_is',
+			url: 'https://twitter.com/luke_is',
 		},
 		{
 			icon: 'lastfm.svg',
