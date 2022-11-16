@@ -3,7 +3,9 @@
   "description": "luke.dev",
   "version": "3.0.0",
   "license": "UNLICENSED",
-  "scripts": {},
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/main.css -o ./public/styles.css --watch"
+  },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
   },
