@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="stylesheet" href="/styles/styles.css" />
+		<title>{{ title }}</title>
+
+		<meta name="description" content="Personal web site of Luke Martin, a Lead UI Developer from London" />
+	</head>
+	<body class="h-full bg-gradient-to-br from-cyan-300 via-fuchsia-200 to-purple-300 animate-bg bg-size-200">
+		{{ content | safe }}
+
+		<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+		<noscript>
+			<img src="https://api.simpleanalytics.io/hello.gif" alt="" />
+		</noscript>
+	</body>
+</html>
